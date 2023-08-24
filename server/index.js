@@ -6,9 +6,9 @@ const app = express();
 const pool = require("./db");
 const bcrypt=require( 'bcrypt')
 const jwt=require('jsonwebtoken')
-// app.get('/', (req,res)=>{
-//     res.send('hello')
-// })
+app.get('/', (req,res)=>{
+    res.send('hello')
+})
 app.use(cors());
 app.use(express.json());
 // get all todos
