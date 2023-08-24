@@ -12,7 +12,7 @@ const  App=() =>{
 
   
   const getData= async()=>{
-    
+    console.log("url", process.env.REACT_APP_SERVERURL)
     try{
      
       const response = await fetch(`${process.env.REACT_APP_SERVERURL}/todos/${userEmail}`)
